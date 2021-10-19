@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupones</title>
+</head>
+<body>
+    <header>
+        <h1>Cupones</h1>
+    </header>
+
+    <section>
+        <h2>
+            Calcula el precio a pagar por tus productos con descuento
+        </h2>
+
+        <form>
+            <label for="InputCoupon">Escribe el cupón de descuento para tu producto: </label>
+            <input id="InputCoupon" type="text">
+
+            <label for="InputDiscount">Descuento: </label>
+            <input id="InputDiscount" type="text">
+
+            <button type="button" onClick="buttonPriceDiscount()">
+                Calcular el precio con descuento
+            </button>
+
+            <p id="ResultP"></p>
+        </form>
+    </section>
+
+    <script src="cupones.js"></script>
+</body>
+</html>

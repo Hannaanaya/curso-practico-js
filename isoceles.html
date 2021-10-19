@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        #alturaIsoceles {
-            width: 70px;
-        }
-    </style>
+    <title>Triángulo Isóceles</title>
 </head>
 <body>
     <section>
@@ -21,13 +15,15 @@
         <label for="">
             Escribe las medidas del triángulo
         </label>
-        <input type="number" id="alturaIsoceles" placeholder="ladoA">
-        <input type="number" id="alturaIsoceles" placeholder="ladoB">
-        <input type="number" id="alturaIsoceles" placeholder="base">
+        <input type="number" id="IsocelesLadoA" placeholder="ladoA">
+        <input type="number" id="IsocelesLadoB" placeholder="ladoB">
+        <input type="number" id="IsocelesBase" placeholder="base">
 
-        <button>Calcular altura</button>
+        <button onClick="calcularAlturaTriangulo()">Calcular altura</button>
+
+        <p id="ResultP"></p>
     </section>
 
-    <script src="triangulo_isoceles.js"></script>
+    <script src="isoceles.js"></script>
 </body>
 </html>
