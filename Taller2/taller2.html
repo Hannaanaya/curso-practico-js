@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="taller2.css">
+    <link rel="stylesheet" href="../global.css">
+    <title>Porcentajes y descuentos en precios || Curso práctico de JS</title>
+</head>
+<body>
+    <header>
+        <p id="title"><strong>Taller 2</strong></p>
+        <p id="sub_title"><strong>Porcentajes y descuentos en precios</strong></p>
+    </header>
+
+    <section id="form">
+        <section id="precio">
+            <form id="form_precio">
+                <label for="InputPrice">Escribe el <strong>Precio</strong> de tu producto: </label>
+                <section>
+                    <input id="InputPrice" type="number" placeholder="$"> 
+                </section>
+                    
+                
+                <label for="InputDiscount">Ingresa el <strong>Descuento: </strong></label>
+                <section>
+                    <input id="InputDiscount" type="text" placeholder="%">
+                </section>
+                
+                <label for="InputCoupon">Si cuentas con un <strong>Cupón</strong>, escríbelo</label>
+                <section>
+                    <input id="InputCoupon" type="text" placeholder="%">
+                </section>
+                
+    
+                <button id="boton1" type="button" onClick="buttonPriceDiscount()">
+                    <strong>CALCULAR EL PRECIO CON DESCUENTO</strong> 
+                </button>
+                <button id="boton2" type="button" onClick="buttonPriceDiscount()">
+                    <strong>CALCULAR EL PRECIO CON CUPÓN</strong> 
+                </button>
+    
+                <p id="ResultP"></p>
+            </form>
+        </section>
+    </section>
+
+    <script src="descuentos.js"></script>
+    <script src="cupones.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+#form {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+#cuadrado, #triángulo, #círculo {
+    margin: 25px;
+    padding: 35px;
+    width: 330px;
+    border: black solid;
+    border-radius: 5px;
+    align-items: center;
+}
+#noResult {
+    color: red;
+}
+#form_cuadrado, 
+#form_círculo, 
+#form_triángulo,
+label, input {
+    text-align: center;
+    justify-content: center;
+}
+input {
+    margin-top: 15px;
+}

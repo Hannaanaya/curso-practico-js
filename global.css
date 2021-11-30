@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+h2 {
+    text-align: center;
+}
+
+#title {
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(14, 146, 14);
+}
+
+#sub_title {
+    margin: 0px;
+    padding: 15px;
+    display: flex;
+    color: black;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(101, 203, 250);
+}
+
+#boton1 {
+    margin: 10px;
+    padding: 10px;
+    background-color: chartreuse;
+}
+#boton2 {
+    margin: 10px;
+    padding: 10px;
+    background-color: purple;
+}

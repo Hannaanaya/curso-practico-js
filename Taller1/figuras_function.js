@@ -25,7 +25,19 @@ function areaTriangulo(base, altura) {
     return (base * altura) /2;
 }
 
+// TRIÁNGULO ISÓCELES
+function alturaTrianguloIsoceles(ladoA, ladoB, ladoBase) {
+    if (ladoA === ladoB) {
+        const altura = Math.sqrt(ladoA**2 - ladoBase**2 / 4)
+        return altura;
+    } else {
+        alert("Las medidas están mal")
+    }
+}
+
 console.groupEnd();
+
+
 
 
 //CÍRCULO
@@ -54,17 +66,21 @@ console.groupEnd();
 
 //Cuadrado
 function calcularPerimetroCuadrado() {
+    if (" ") {
+        const noResult = document.getElementById("noResult");
+        noResult.innerText = "NO SE HA INTRODUCIDO NINGÚN NÚMERO";
+    }
+
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
+    const perimetro = perimetroCuadrado(value)
+    alert(perimetro); 
 
-    const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
 }
 
 function calcularAreaCuadrado() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
-
     const area = areaCuadrado(value);
     alert(area);
 }
@@ -72,17 +88,16 @@ function calcularAreaCuadrado() {
 
 //Triángulo
 function calcularPerimetroTriangulo() {
-
-    const inputLadoA = document.getElementById("InputLado1")
-    const LadoaValue = inputLadoA.value;
-
-    const inputLadoB = document.getElementById("InputLado2")
-    const LadobValue = inputLadoB.value;
+    const inputLado1 = document.getElementById("InputLado1")
+    const Lado1Value = inputLado1.value;
+    
+    const inputLado2 = document.getElementById("InputLado2")
+    const Lado2Value = inputLado2.value;
 
     const inputBase = document.getElementById("InputBaseP")
     const baseValue = inputBase.value;
 
-    const perimetro = perimetroTriangulo(LadoaValue, LadobValue, baseValue);
+    const perimetro = perimetroTriangulo(Lado1Value, Lado2Value, baseValue);
     alert(perimetro);
 }
 
@@ -96,6 +111,26 @@ function calcularAreaTriangulo() {
 
     const area = areaTriangulo(baseValue, alturaValue);
     alert(area);
+}
+
+//Triángulo Isóceles
+function calcularAlturaTriangulo() {
+
+    const inputLadoA = document.getElementById("IsocelesLadoA")
+    const LadoaValue = inputLadoA.value;
+
+    const inputLadoB = document.getElementById("IsocelesLadoB")
+    const LadobValue = inputLadoB.value;
+
+    const inputBase = document.getElementById("IsocelesBase")
+    const baseValue = inputBase.value;
+
+    const alturaTriangulo = alturaTrianguloIsoceles(LadoaValue, LadobValue, baseValue);
+
+
+    const resultP = document.getElementById("ResultP");
+    resultP.innerText = "Altura: " + alturaTriangulo;
+
 }
 
 

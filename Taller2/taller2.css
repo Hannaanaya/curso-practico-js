@@ -1,0 +1,26 @@
+#form {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+#precio {
+    margin: 25px;
+    padding: 35px;
+    /* width: 330px; */
+    border-radius: 5px;
+    align-items: center;
+    border: black solid;
+}
+#form_precio,
+#form_cupon,
+label, input {
+    text-align: center;
+    justify-content: center;
+}
+input {
+    margin: 15px;
+}
+p {
+    color: green;
+}
